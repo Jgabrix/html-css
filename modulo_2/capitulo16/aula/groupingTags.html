@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: darkgray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: white;
+            padding: 2%;
+            margin: 2%;
+        }
+
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 1%;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 3.5%;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 2%;
+            margin: 2%;
+        }
+
+        #noticias {
+            background-color: darkgray;
+            padding: 2% 1%;
+        }
+
+        aside > p {
+            background-color: rgb(132, 130, 130);
+        }
+
+        footer {
+            background-color: black;
+        }
+
+        footer > p {
+            color: white;
+            text-align: center;
+            padding: 2%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Políticas Tecnologia</p>
+        </section>
+        <section id="noticias"> 
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex maxime iure expedita omnis, at eum aliquam dicta in, nulla aspernatur officia debitis rerum, facere dolor consequatur laborum ipsum! Voluptatem, voluptas!</p>
+                <aside>
+                    <p>Artigo escrito por José Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer><p>Desenvolvido por João</p></footer>
+</body>
+</html>

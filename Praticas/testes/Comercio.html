@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <!--Em Desenvolvimento-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comércio</title>
+    <style>
+        body{
+            background-color: aqua;
+            font: normal 12pt Arial;
+        }
+        h1{
+            background-color: blueviolet;
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 20px;
+        }
+        div#produtos{
+            background-color: rgb(97, 75, 226);
+            width: 300px;
+            height: 360px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        div#lista{
+            background-color: chocolate;
+            text-align: left;
+            border-radius: 20px;
+            height: auto;
+            width: 270px;
+        }
+        div#carrinho{
+            background-color: chocolate;
+            height: 40px;
+            width: auto;
+            border-radius: 20px;
+            font: normal 9pt arial ;
+            text-align: center;
+        }
+        div#comprar{
+            background-color: blueviolet;
+            border-radius: 20px;
+            height: 20px;
+        }
+        section#sesão{
+            background-color: chocolate;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mercadinho Roxo</h1>
+        <div id="produtos">
+            <strong>Produtos</strong>
+            <div id="lista">
+                <ul>Queijo: R$4,89 <button onclick="clicar2()">Adicionar no carrinho</button></ul>
+                <ul>Tomate: R$8,90 <button onclick="clicar3()">Adicionar no carrinho</button></ul>
+                <ul>Arroz: R$7,67  <button onclick="clicar4()">Adicionar no carrinho</button></ul>
+                <ul>Feijão: R$5,97 <button onclick="clicar1()">Adicionar no carrinho</button></ul>
+            </div>
+                <section id="sesão">
+                    carrinho: 
+                    <div id="carrinho"></div>
+                    <button onclick="comprar()">pagar</button>
+                    <div id="comprar"></div>
+                </section>
+            </div>
+    <script>
+        var pagar = document.getElementById('comprar')
+        var produtos = document.getElementById('carrinho')
+        function clicar1(){
+            var feijão_valor = 5.97
+            produtos.innerText = `Feijão: ${feijão_valor}`
+            return feijão_valor
+        }
+        function clicar2(){
+            var Queijo_valor = 4.89
+            produtos.innerText = `Queijo: ${Queijo_valor}`
+            return Queijo_valor
+        }
+        function clicar3(){
+            var Tomate_valor = 8.90
+            produtos.innerText = `Tomate: ${Tomate_valor}`
+            return Tomate_valor 
+        }
+        function clicar4(){
+            var Arroz_valor = 7.67
+            produtos.innerText = `Arroz: ${Arroz_valor}`
+            return Arroz_valor
+        }
+        function comprar(){
+            var preco_queijo = clicar1()
+            var preco_tomate = clicar2()
+            var preco_arroz = clicar3()
+            var preco_feijao = clicar4()
+            var soma = preco_arroz + preco_feijao+ preco_queijo + preco_tomate 
+            pagar.innerText = `Total a pagar: ${soma}`
+
+        }
+    </script>
+</body>
+</html>

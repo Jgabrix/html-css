@@ -1,0 +1,8 @@
+body{
+    background-color: aqua;
+    font: normal 16pt Arial;
+}
+
+h1#titulo{
+    text-align: center;
+}

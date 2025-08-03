@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(210, 23, 138);
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    padding-left: 8%;
+    padding-top: 6%;
+}
+
+
+.cabecalho_menu{
+    display: flex;
+    gap: 6%;
+}
+
+.cabecalho_menu_links{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.apresentacao{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+    gap: 5%;
+    padding: 2%;
+    border: 10px  rgb(30, 29, 29) solid;
+    box-shadow: 3px 3px 10px black;
+
+}
+
+.apresentacao_sessao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.apresentacao_sessao_titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.apresentacao_sessao_paragrafo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+}
+
+
+.apresentacao_sessao_paragrafo_div{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-left: 4%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+}
+
+.apresentacao_sessao_paragrafo_link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    background-color: rgb(30, 29, 29);
+    width: 14.5%;
+    height: 3rem;
+    text-align: center;
+    padding-top: 2.5%;
+    margin-left: 2% ;
+    border-radius: 13%;
+    box-shadow: 3px 3px 3px black;
+}
+
+.apresentacao_sessao_paragrafo_link_endereco{
+    color: red;
+    text-decoration: none;
+}
+
+.apresentacao_sessao_paragrafo_link:hover{
+    background-color: rgb(53, 52, 52);
+}
+
+.apresentacao_imagem{
+    width: 40%;
+}
+
+.rodape{
+    background-color: rgb(30, 29, 29);
+    color:rgb(210, 23, 138); 
+    text-align: center;
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-style: italic;
+}

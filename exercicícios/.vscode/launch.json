@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "msedge",
+            "name": "http://127.0.0.1:3000/exer-07/index.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/exer-07/index.html"
+        },
+        {
+            "type": "msedge",
+            "name": "http://127.0.0.1:3000/Pratica01/index.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/Pratica01/index.html"
+        }
+    ]
+}
